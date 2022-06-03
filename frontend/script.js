@@ -36,8 +36,23 @@ const fetchOpt = {
     
     </article>`);
 
-
-
-
+    document.getElementById('city').addEventListener('keyup', async e => { 
+        const value = e.target.value;
     
+        if (value.length >= 3) { 
+            await fetch(getFetchUrl(fetchOpt, 'search', value)) 
+            .then(result => { 
+              return result.json()
+            })
+            .then(result => { 
+              document.getElementById('list-city').innerHTML = result.reduce((p, curr) => p + `<option value="${curr.name}">${curr.name}, ${curr.country}</option>`, '');
+            })
+            .catch(e => console.log(e)); 
+        }
+      });
+
+
+
+
+
   }
