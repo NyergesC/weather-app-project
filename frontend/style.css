@@ -116,10 +116,35 @@ label {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom right, #fabc8d, #b839ce);
     color: white;
     padding: 30px 0;
     border-radius: 20px;
     box-shadow: 5px 5px 15px #bfa8bc;
+}
+
+.divcard img[src="pin.png"]{
+    width: 15px;
+}
+.wheatherImage {
+    width: 150px;
+/*     padding-left: 10px; */
+}
+
+.divcard img:nth-child(1) {
+/*     padding-left: 70px; */
+}
+
+.temp {
+    font-size: 60px;
+}
+
+.divcard h4 {
+    font-size: 50px;
+}
+
+.divcard h5 {
+    font-size: 18px;
 }
