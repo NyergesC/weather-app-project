@@ -24,9 +24,7 @@ const fetchOpt = {
     </div>
     <div class="input">
       <form id="form-weather" class="js-form-weather">
-        <div class="autocomplete" >
-          <input autocomplete=off id="city" list="list-city" name="city" form="form-weather" placeholder="Choose your city">
-        </div>    
+        <input autocomplete=off id="city" list="list-city" name="city" form="form-weather" placeholder="Choose your city">
         <datalist id="list-city"></datalist>
         <button class="js-selected-city" type="button">Search</button>
        
