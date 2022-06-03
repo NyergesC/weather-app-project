@@ -39,7 +39,7 @@ const fetchOpt = {
     document.getElementById('city').addEventListener('keyup', async e => { 
         const value = e.target.value;
     
-        if (value.length >= 3) { 
+        if (value.length >= 2) { 
             await fetch(getFetchUrl(fetchOpt, 'search', value)) 
             .then(result => { 
               return result.json()
