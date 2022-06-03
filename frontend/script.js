@@ -61,31 +61,34 @@ const fetchOpt = {
           })
           .then(result => {
             document.getElementById('card').innerHTML = `
-              <div class="divcard">
-                  <img src="pin.png">
-                  <h3>${result.location.country}</h3>
-                  <h1>${result.location.name}</h1>
-                  <img class="wheatherImage" src="https:${result.current.condition.icon}">
-                  <h4>${result.current.condition.text}</h4>
-                  <h2 class="temp">${result.current.temp_c}°C</h2>
-                  <h5>Local time:</h5>
-                  <h5>${result.location.localtime}</h5>
-              </div>
-              <div class="humidity">
-                  <img src="humidity.png">
-                  <h4>Humidity:</h4>
-                  <h2>${result.current.humidity}%</h2>
-              </div>
-              <div class="feelslike">
-                  <img src="good-review.png">
-                  <h3>Feels like:</h3>
-                  <h2>${result.current.feelslike_c}</h2>
-              </div>
-              <div class="wind">
-                  <img src="wind.png" width: "100px">
-                  <h3>Wind:</h3>
-                  <h2>${result.current.wind_kph} km/h</h2>
-              </div>` 
+             <div class="container">
+                <div class="divcard">
+                    <img src="pin.png">
+                    <h3>${result.location.country}</h3>
+                    <h1>${result.location.name}</h1>
+                    <img class="wheatherImage" src="https:${result.current.condition.icon}">
+                    <h4>${result.current.condition.text}</h4>
+                    <h2 class="temp">${result.current.temp_c}°C</h2>
+                    <h5>Local time:</h5>
+                    <h5>${result.location.localtime}</h5>
+                </div>
+                <div class="humidity">
+                    <img src="humidity.png">
+                    <h4>Humidity:</h4>
+                    <h2>${result.current.humidity}%</h2>
+                </div>
+                <div class="feelslike">
+                    <img src="good-review.png">
+                    <h3>Feels like:</h3>
+                    <h2>${result.current.feelslike_c}</h2>
+                </div>
+                <div class="wind">
+                    <img src="wind.png" width: "100px">
+                    <h3>Wind:</h3>
+                    <h2>${result.current.wind_kph} km/h</h2>
+                </div>
+              </div> 
+              `
                ;
           })
           .catch(e => console.log(e));
