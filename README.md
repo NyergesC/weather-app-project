@@ -1,9 +1,15 @@
-# Pretty Simple Web server written in Node.js
+# Weather App
 
-You can use this repository as a template for your repository or copy the files into your repository manually
+## Getting Started 
 
-1. Open a new terminal (eg. in VS Code when your repository's directory opened)
-2. Run with the following command: `node backend/server.js` (Make sure that you are in the right directory.)
-3. If you don't need it stop it with `Control + C` keycommand.
+To start the website please write the followings to your terminal: 
 
-You can write your frontend code (`HTML, CSS, JS`) into the `frontend` directory.
+1.) cd backend   
+2.) node server.js   
+
+## Scope of the project
+
+The aim of the project was to build a website using Rest Api from 'weatherapi.com'. At the beginning, the user will see an input field where he can choose a city. After typing 3 characters, the attached cities will be shown with autocomplete. Once it's clicked, the weather details will be shown on a card and some additional extra details using some animation effects.
+
+
+![Weather App!](/frontend/weather_app.jpg "Weather App")
