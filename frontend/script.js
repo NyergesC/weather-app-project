@@ -20,7 +20,7 @@ const fetchOpt = {
     document.getElementById('root').insertAdjacentHTML('beforeend',
     `
     <div class="title">
-      <h1>Hot Potatoes' Wheather App</h1>
+      <h1>Weather Web Application</h1>
     </div>
     <div class="input">
       <form id="form-weather" class="js-form-weather">
